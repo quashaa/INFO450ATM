@@ -22,35 +22,35 @@ int main()
 		int fifty = 0, twenty = 0, ten = 0, five = 0, one = 0;
 		
 		/*These loops subtract the highest amount possible from the withdrawal 
-		while also adding a value of 1 to the respective denomination*/
+		while also incrementing the respective denomination by 1 when necessary*/
 		while (withdraw >= 50)
 		{
 			withdraw -= 50;
-			fifty += 1;
+			++fifty;
 		}
 
 		while (withdraw >= 20)
 		{
 			withdraw -= 20;
-			twenty += 1;
+			++twenty;
 		}
 
 		while (withdraw >= 10)
 		{
 			withdraw -= 10;
-			ten += 1;
+			++ten;
 		}
 
 		while (withdraw >= 5)
 		{
 			withdraw -= 5;
-			five += 1;
+			++five;
 		}
 
 		while (withdraw >= 1)
 		{
 			withdraw -= 1;
-			one += 1;
+			++one;
 		}
 
 		cout << "\nPlease wait... Your cash is being dispersed as below:" << endl;
@@ -77,8 +77,7 @@ int main()
 
 
 
-	}
-	while (answer == 'Y' || answer == 'y');
+	} while (answer == 'Y' || answer == 'y');
 
 	cout << "**** Good Bye! ****" << endl;
 	system("pause");
@@ -102,9 +101,7 @@ int getWithdraw()
 
 		if (withdraw > max)
 			cout << "Sorry, the maximum amount allowed to be withdrawn is $300.00\n" << endl;
-	}
-
-	while (withdraw < min || withdraw > max);
+	} while (withdraw < min || withdraw > max);
 
 	return withdraw;
 }
