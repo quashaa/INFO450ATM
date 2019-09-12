@@ -96,7 +96,7 @@ int getWithdraw()
 		cout << "Please enter a withdrawal amount" << endl;
 		cin >> withdraw;
 
-		//These if statements notify the user that the amount entered needs to be less than 1 or greater than 300
+		//These if statements notify the user that the amount entered can't be less than 1 or greater than 300
 		if (withdraw < min)
 			cout << "Sorry, the minimum amount allowed to be withdrawn is $1.00\n" << endl;
 
