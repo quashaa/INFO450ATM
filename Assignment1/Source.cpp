@@ -11,6 +11,7 @@ int main()
 	char answer;
 
 	cout << "**** Welcome to the ATM! ****\n" << endl;
+
 	//This loop excutes the initial withdrawal request and allows for additional withdrawals
 	do
 	{
